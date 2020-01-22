@@ -1,13 +1,34 @@
 body {
-  background-color: beige;
+  background-color: seashell;
+  padding: 35px;
+  font-family: roboto;
 }
+
+pre
+  {  font-family: roboto;
+    color: tomato;
+
+  }
 
 h1 {
-  color: burgundy:
-  font-family: helvetica;
-
+  color: tomato;
 }
 
+h2 {
+  color: tomato;
+}
+
+h3 {
+  color: tomato;
+}
+
+em {
+  color: coral;
+}
 p {
-  color: burgundy;
+  color: gray;
+}
+
+ul {
+  color: gray;
 }
