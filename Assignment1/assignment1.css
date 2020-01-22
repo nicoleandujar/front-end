@@ -1,6 +1,6 @@
 body {
   background-color: seashell;
-  padding: 35px;
+  padding: 45px;
   font-family: roboto;
 }
 
@@ -9,6 +9,9 @@ pre
     color: tomato;
 
   }
+a {
+  color: coral;
+}
 
 h1 {
   color: tomato;
@@ -23,7 +26,7 @@ h3 {
 }
 
 em {
-  color: coral;
+  color: tomato;
 }
 p {
   color: gray;
