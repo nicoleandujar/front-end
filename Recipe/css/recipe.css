@@ -18,6 +18,9 @@ body{
   font-weight: 300;
 }
 
+h2 {
+  margin-top: 30px;
+}
 .photo {
   float: right;
 }
@@ -27,8 +30,8 @@ body{
 }
 
 .prep{
-    font-size: 12px;
-    margin: 3px;
+  font-size: 12px;
+  margin: 3px;
 }
 
 .content h1{
@@ -62,19 +65,18 @@ img{
   margin: 7px;
 }
 
-a {
-  font-color: rgba(241,229,242);
+a:link {
+  color: rgb(175,107,129);
 }
 
-h2 {
-  margin-top: 30px;
+a:visited {
+  color: rgb(155,155,155);
 }
-
 
 .other {
   background-color: rgba(224,228,231, 0.5);
   font-size: 11px;
-  padding: 10px;
-  padding-left: 35px;
+  padding: 8px;
+  padding-left: 20px;
   margin: 0px;
 }
