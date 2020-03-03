@@ -1,0 +1,79 @@
+@import url('https://fonts.googleapis.com/css?family=Muli:400,700,900&display=swap');
+
+
+p {
+  line-height: .75em; /* .75 x 16px = 12 */
+}
+
+p, li  {
+  color: rgb(0, 153, 204);
+}
+
+main {
+  background-color: rgba(204, 230, 255, 0.4);
+  padding: 2em; /* 2 x 16px = 32 */
+}
+
+section > p {
+  color: rgb(255, 153, 0);
+}
+
+body {
+  font-family: "Muli",  sans-serif;
+  font-weight: 300;
+  margin-right: auto;
+  margin-left:  auto;
+  max-width: 54rem; /* 54 x 16px = 864px */
+  padding-right: .625rem; /* .625 x 16px = 10px */
+  padding-left:  .625rem; /* .625 x 16px = 10px */
+}
+
+h1 {
+  font-size: 1.75rem; /* 1.75 x 16px = 28 */
+  color: rgb(0, 51, 102);
+  margin-top: 1.875rem; /* 1.875 x 16px = 30px */
+}
+
+h2 {
+  font-size: 1.25rem; /* 1.25 x 16px = 20px */
+  color: rgb(255, 153, 0);
+  margin-top: 1.875rem; /* 1.875 x 16px = 30px */
+}
+
+h3 {
+  padding-top: 2rem; /* 2 x 16px = 32 */
+  color: rgb(51, 102, 153);
+  padding-left: 2rem; /* 2 x 16px = 32 */
+}
+
+h3 ~ p {
+  color: rgb(51, 102, 153);
+  line-height: .45em; /* .45 x 16px = 7.2 */
+  margin-left: 2rem; /* 2 x 16px = 32px */
+}
+
+section > h3 {
+  background-color: rgba(255, 153, 0,0.45);
+  margin-top: 2rem; /* 2 x 16px = 32px */
+  padding-left: 1.5rem; /* 1.5 x 16px = 24px */
+  padding-bottom: 1.5rem; /* 1.5 x 16px = 24px */
+}
+
+li {
+  line-height: 1.5em; /* 1.5 x 16px = 24px */
+}
+
+img {
+  float: right;
+  width: 18rem; /* 18 x 16px = 288px */
+  border: 0.5rem solid rgb(51, 102, 153);
+}
+
+
+a:link {
+  color: rgb(255, 204, 102);
+}
+
+a:visited {
+  color: rgb(0, 51, 153);
+}
