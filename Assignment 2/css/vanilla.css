@@ -1,5 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Muli:400,700,900&display=swap');
-
+@import url('https://fonts.googleapis.com/css?family=Muli:300,800,900&display=swap');
 
 p {
   line-height: .75em; /* .75 x 16px = 12 */
@@ -10,7 +9,7 @@ p, li  {
 }
 
 main {
-  background-color: rgba(204, 230, 255, 0.4);
+  background-color: rgba(204, 230, 255, 0.3);
   padding: 2em; /* 2 x 16px = 32 */
 }
 
@@ -41,22 +40,22 @@ h2 {
 }
 
 h3 {
-  padding-top: 2rem; /* 2 x 16px = 32 */
-  color: rgb(51, 102, 153);
-  padding-left: 2rem; /* 2 x 16px = 32 */
+  padding-top: 2rem; /* 2 x 16px = 32px */
+  color: rgb(255,255,255);
+  padding-left: 2rem; /* 2 x 16px = 32px */
 }
 
 h3 ~ p {
   color: rgb(51, 102, 153);
-  line-height: .45em; /* .45 x 16px = 7.2 */
+  font-size: .75rem; /* .75 x 16px = 12px */
+  line-height: .45em; /* .45 x 16px = 7.2px */
   margin-left: 2rem; /* 2 x 16px = 32px */
 }
 
 section > h3 {
-  background-color: rgba(255, 153, 0,0.45);
+  background-color: rgba(255, 153, 0,0.75); /* box around h3 */
   margin-top: 2rem; /* 2 x 16px = 32px */
-  padding-left: 1.5rem; /* 1.5 x 16px = 24px */
-  padding-bottom: 1.5rem; /* 1.5 x 16px = 24px */
+  padding: .75rem; /* .75 x 16px = 12px */
 }
 
 li {
