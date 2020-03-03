@@ -8,6 +8,7 @@ p, li  {
   color: rgb(0, 153, 204);
 }
 
+
 main {
   background-color: rgba(204, 230, 255, 0.3);
   padding: 2em; /* 2 x 16px = 32 */
@@ -58,6 +59,12 @@ section > h3 {
   padding: .75rem; /* .75 x 16px = 12px */
 }
 
+ul::after {
+  font-size: .875rem; /* .875rem x 16px = 14px */
+  content: "*Remember to multiply each ingredient by number of servings";
+  color: rgb(255, 153, 0);
+}
+
 li {
   line-height: 1.5em; /* 1.5 x 16px = 24px */
 }
@@ -65,7 +72,7 @@ li {
 img {
   float: right;
   width: 18rem; /* 18 x 16px = 288px */
-  border: 0.5rem solid rgb(51, 102, 153);
+  border: 10px solid rgb(51, 102, 153);
 }
 
 
