@@ -1,0 +1,141 @@
+Last login: Wed Feb  5 18:43:16 on console
+i205704mac:~ naa134$ which git
+/usr/local/bin/git
+i205704mac:~ naa134$ which erin
+i205704mac:~ naa134$ git config --global user.name "Nicole Andujar"
+i205704mac:~ naa134$ git config --global user.email "nandujar@miami.edu
+> "
+i205704mac:~ naa134$ git config --global user.email"nandujar@miami.edu"
+i205704mac:~ naa134$ git config --global core.editor "nano"
+i205704mac:~ naa134$ cd
+i205704mac:~ naa134$ ls
+Desktop		Downloads	Movies		Pictures
+Documents	Library		Music		Public
+i205704mac:~ naa134$ cd desktop
+i205704mac:desktop naa134$ git clone https://github.com/nicoleandujar/exercise-02.git
+Cloning into 'exercise-02'...
+remote: Enumerating objects: 6, done.
+remote: Counting objects: 100% (6/6), done.
+remote: Compressing objects: 100% (5/5), done.
+remote: Total 6 (delta 0), reused 6 (delta 0), pack-reused 0
+Unpacking objects: 100% (6/6), done.
+i205704mac:desktop naa134$ cd exercise-02
+i205704mac:exercise-02 naa134$ git rm README.md
+rm 'README.md'
+i205704mac:exercise-02 naa134$ git branch fix-typo
+i205704mac:exercise-02 naa134$ ls
+css		index.html
+i205704mac:exercise-02 naa134$ git checkout fix-typo
+D	README.md
+Switched to branch 'fix-typo'
+i205704mac:exercise-02 naa134$ git checkout master
+D	README.md
+Switched to branch 'master'
+Your branch is up to date with 'origin/master'.
+i205704mac:exercise-02 naa134$ git status
+On branch master
+Your branch is up to date with 'origin/master'.
+
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+	deleted:    README.md
+
+i205704mac:exercise-02 naa134$ git commit --message "Deleted README.md file"
+[master dce02fc] Deleted README.md file
+ 1 file changed, 56 deletions(-)
+ delete mode 100644 README.md
+i205704mac:exercise-02 naa134$ git checkout fix-typo
+Switched to branch 'fix-typo'
+i205704mac:exercise-02 naa134$ git checkout master
+Switched to branch 'master'
+Your branch is ahead of 'origin/master' by 1 commit.
+  (use "git push" to publish your local commits)
+i205704mac:exercise-02 naa134$ git branch
+  fix-typo
+* master
+i205704mac:exercise-02 naa134$ git branch -d fix-typo
+Deleted branch fix-typo (was 5ecab06).
+i205704mac:exercise-02 naa134$ git log
+commit dce02fc0e48acf325c8f06907a69b3c6e395e747 (HEAD -> master)
+Author: Nicole Andujar <nandujar@miami.edu>
+Date:   Wed Feb 5 19:08:46 2020 -0500
+
+    Deleted README.md file
+
+commit 5ecab06f85b798d83f0db08e1eefac106788ca91 (origin/master, origin/HEAD)
+Author: Erin Brown <erin.brown@miami.edu>
+Date:   Wed Feb 5 14:14:23 2020 -0500
+
+    Initial commit.
+i205704mac:exercise-02 naa134$ git branch fix-typo
+i205704mac:exercise-02 naa134$ git branch
+  fix-typo
+* master
+i205704mac:exercise-02 naa134$ git checkout fix-typo
+Switched to branch 'fix-typo'
+i205704mac:exercise-02 naa134$ git branch
+* fix-typo
+  master
+i205704mac:exercise-02 naa134$ git commit --message "fixed typo on index.html of fix-typo branch"
+On branch fix-typo
+Changes not staged for commit:
+	modified:   index.html
+
+no changes added to commit
+i205704mac:exercise-02 naa134$ git status
+On branch fix-typo
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+	modified:   index.html
+
+no changes added to commit (use "git add" and/or "git commit -a")
+i205704mac:exercise-02 naa134$ git add index.html
+i205704mac:exercise-02 naa134$ git commit -m "fixed typo on index.html"
+[fix-typo 4a3516b] fixed typo on index.html
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+i205704mac:exercise-02 naa134$ git branch update-web-site
+i205704mac:exercise-02 naa134$ git checkout update-web-site
+Switched to branch 'update-web-site'
+i205704mac:exercise-02 naa134$ git add index.html css/style.css
+i205704mac:exercise-02 naa134$ git commit -m 
+error: switch `m' requires a value
+i205704mac:exercise-02 naa134$ git commit -m "Added footer to index.html and switched font in stylesheet"
+[update-web-site 57a707a] Added footer to index.html and switched font in stylesheet
+ 2 files changed, 2 insertions(+), 1 deletion(-)
+i205704mac:exercise-02 naa134$ git status
+On branch update-web-site
+nothing to commit, working tree clean
+i205704mac:exercise-02 naa134$ git ls
+git: 'ls' is not a git command. See 'git --help'.
+
+The most similar commands are
+	lg
+	ll
+i205704mac:exercise-02 naa134$ ls
+css		index.html
+i205704mac:exercise-02 naa134$ git push origin --all
+Username for 'https://github.com': nandujar
+Password for 'https://nandujar@github.com': 
+remote: Invalid username or password.
+fatal: Authentication failed for 'https://github.com/nicoleandujar/exercise-02.git/'
+i205704mac:exercise-02 naa134$ git push origin --all
+Username for 'https://github.com': nandujar
+Password for 'https://nandujar@github.com': 
+remote: Invalid username or password.
+fatal: Authentication failed for 'https://github.com/nicoleandujar/exercise-02.git/'
+i205704mac:exercise-02 naa134$ git push origin --all
+Username for 'https://github.com': nicoleandujar
+Password for 'https://nicoleandujar@github.com': 
+Enumerating objects: 14, done.
+Counting objects: 100% (14/14), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (9/9), done.
+Writing objects: 100% (10/10), 1.01 KiB | 1.01 MiB/s, done.
+Total 10 (delta 3), reused 0 (delta 0)
+remote: Resolving deltas: 100% (3/3), completed with 2 local objects.
+To https://github.com/nicoleandujar/exercise-02.git
+   5ecab06..dce02fc  master -> master
+ * [new branch]      fix-typo -> fix-typo
+ * [new branch]      update-web-site -> update-web-site
+i205704mac:exercise-02 naa134$ 
