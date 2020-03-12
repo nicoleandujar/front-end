@@ -1,0 +1,43 @@
+CSS Selectors & Units
+Student: Nicole Andujar
+
+Grade: 8/10
+
+
+- The page does not validate. (I took off a point for this.) There are typos in tags, tags not closed. There needs to be a lot more attention to detail.
+
+The design itself is very nice, but building for the web is _not_ just about slapping HTML on a page and making any sort of adjustment to make the page "look" good. There are repercussions for having bad or broken structure, namely SEO and accessibility.
+
+- I deducted a point because the setup for using rem is incorrect. You need to also include a rule which sets the root font size:
+
+html {
+  font-size: 16px;
+}
+
+Without this, you are relying on the browser default size -- which could be anything. Granted, the benefit of relative units is that you are not relying on pixels and your design will adjust either way. But you want to at least set what those rems will be measured by.
+
+There's a mix of em and rem. It's technically not wrong (you could use one of every unit if you really wanted to), but it's best to pick one and stick with it. It just makes life a lot easier when you have to do the mental math.
+
+- Use of selectors is okay. Creative use of ::after. :)
+
+(As for some feedback unrelated to the assignment, but may help you improve...)
+
+- Use of h3 is improper in your example. If the style sheet weren't working, would "Other Information" be a subsection of "Directions"? (No.) It's perfectly fine to style it differently as you have, and you actually don't need to change the heading to an h3 just to style it that way. In your code you have two sections, and within that second section would be an h2 ("Other Information"). You could style it using the selector:
+
+section:last-child h2 {
+  /* pretty styles */
+}
+
+See? This is actually the purpose of this exercise -- not "cheating" (I mean that very loosely) through changing the HTML to make your design work, but working within the constraints of a proper structure. When you do so, that's when you can really get into using the selectors we went over.
+
+- You've included a div, but there's no styling on that div. I see you applied "centering" to body -- this should be placed on div, actually. Either way, if you don't need the html, don't include it.
+
+- Paragraphs in the "Other" section are open. Always close your tags.
+
+- You resized the image in code. Don't do this. The image is 488 pixels wide, but only 288px in the code. Re-size it in photoshop to be the size you want it to be. The issue with re-sizing in code is that a user still downloads all 488 pixels worth, and that's added weight they download which can slow down the page.
+
+- Also, photographs should not be saved as png. This is a format used for graphics (i.e. logos) and tends to create really large file sizes (again, adding to the weight, slowness of a page). Photographs should always be saved in jpg format and compressed to a reasonable size. (276k is not terrible -- without any context -- but in this case a 288px image should *not* be that large. You could easily get this down to double digits with jpg compression.)
+
+- I noticed you're using one font weight (300), but have pulled in three (300, 800, 900) through Google Fonts. Only import what you need. The two font weights you are pulling in that aren't used are also adding weight to this page and can slow it down.
+
+- I would suggest ordering your CSS so it's a little more logical. For instance, body always up top (everything is inside body). Then go with general tags (i.e. headings, paragraphs) -- things that may appear throughout body, regardless of section. Then your structural tags and after that, general tags within the structure (i.e. section h2 -- h2 just inside sections). I know it doesn't apply to this project, but then ids and classes. The idea is that as you go down the document, 1. if you had to find that inside the html, it's a little more logical 2. the selectors/rules get more specific and over-write something above. Although we learned how CSS works last week, I find the above technique is very helpful in avoiding conflicts and just being able to match the CSS with HTML (human readability).
