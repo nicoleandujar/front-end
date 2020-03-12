@@ -72,10 +72,6 @@ h1:first-line {
 figcaption {
   color: rgb(255, 51, 102);
   font-size: .75rem;
-  padding: 3px;
-  text-align: center;
-  }
-
 }
 
 article > h2:first-child{
@@ -139,7 +135,6 @@ ul:first-of-type::after {
 
 
 li {
-  font-size: .8rem;
   line-height: 1.5em; /* 1.5 x 16px = 24px */
 }
 
