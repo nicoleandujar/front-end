@@ -24,13 +24,12 @@ main {
   background-color: rgba(204, 230, 255, 0.3);
   padding: 2rem; /* 2 x 16px = 32 */
   grid-column: 2 / span 2;
-  border-radius: 1rem;
+  border-radius: 1rem; /* 1 x 16px = 16px */
 }
 
 
 p {
-  line-height: .75em; /* .75 x 16px = 12 *    grid-template-columns: repeat (2, 1fr);
-    grid-gap: 2rem; /* 2 x 16px = 32px *//
+  line-height: .75em; /* .75 x 16px = 12px */
 }
 
 
@@ -60,7 +59,7 @@ h1 {
   margin-top: 1.875rem; /* 1.875 x 16px = 30px */
   background-color:  rgb(255, 51, 102);
   padding: 1rem; /* 1 x 16px = 16px */
-  border-radius: 1rem;
+  border-radius: 1rem; /* 1 x 16px = 16px */
 
 }
 
@@ -71,15 +70,15 @@ h1:first-line {
 
 figcaption {
   color: rgb(255, 51, 102);
-  font-size: .75rem;
-  padding: 3px;
+  font-size: .75rem;/* .75 x 16px = 12px */
+  padding: .1875rem; /* .1875 x 16px = 3px */
   text-align: center;
   }
 
 }
 
 article > h2:first-child{
-  font-size: .75rem;
+  font-size: .75rem;/* .75 x 16px = 12px */
 }
 
 article:first-of-type p {
@@ -98,6 +97,7 @@ section > h2 {
 section > p {
   font-size: .75em; /* .75 x 16px = 12px */
   color: rgb(0, 102, 153);
+
 }
 
 
@@ -115,16 +115,17 @@ h2:last-of-type {
 
 /* Removes space between Yield and Ingredients */
 article > h2:first-child {
-  margin-top: 1rem;
+  margin-top: 1rem; /* 1 x 16px = 16px */
+
 }
 
 
 /* Box around Other Information */
 article > h2:last-of-type {
   color: white;
-  padding: 1rem; /* 1 x 16px = 16px */
+  padding: .75rem; /* .75 x 16px = 12px */
   background-color: rgba(255, 51, 102,.2); /* box around Other Information heading */
-  border-radius: 1rem;
+  border-radius: 1rem; /* 1 x 16px = 16px */
 }
 
 
@@ -148,12 +149,12 @@ li {
 ul:last-of-type {
   background-color: rgba(255, 51, 102,.1);
   list-style-type: circle;
-  margin: .25rem;
+  margin: .25rem; /* .25 x 16px = 4px */
   padding-left: 2rem; /* 2 x 16px = 32px */
   padding-top: 1rem; /* 1 x 16px = 16px */
   padding-bottom: 1rem; /* 1 x 16px = 16px */
-  padding-right: 1rem;
-  border-radius: 1rem;
+  padding-right: 1rem; /* 1 x 16px = 16px */
+  border-radius: 1rem; /* 1 x 16px = 16px */
 
 }
 
