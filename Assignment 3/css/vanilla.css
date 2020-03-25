@@ -1,10 +1,8 @@
 @import url('https://fonts.googleapis.com/css?family=Muli:300,800&display=swap');
 
-s
 html {
   font-size: 16px;
 }
-
 
 body {
   font-family: "Muli",  sans-serif;
@@ -14,59 +12,56 @@ body {
   max-width: 54rem; /* 54 x 16px = 864px */
   padding-right: .625rem; /* .625 x 16px = 10px */
   padding-left:  .625rem; /* .625 x 16px = 10px */
-  display: run-in;
-  border-radius: 1rem;
-
 }
 
-
-main {
-  background-color: rgba(204, 230, 255, 0.3);
-  padding: 2rem; /* 2 x 16px = 32 */
-  grid-column: 2 / span 2;
-  border-radius: 1rem;
+a:link {
+  color: rgb(153, 0, 51);
 }
 
-
-p {
-  line-height: .75em; /* .75 x 16px = 12 *    grid-template-columns: repeat (2, 1fr);
-    grid-gap: 2rem; /* 2 x 16px = 32px *//
+a:visited {
+  color: rgb(0, 51, 153);
 }
 
-
-p, li  {
-  color: rgb(0, 153, 204);
-}
-
-section:first-of-type {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-}
-
-section:first-of-type h2, section:first-of-type p {
-  display: block;
-}
-
-img {
-  border: 4px solid rgb(51, 102, 153);
-}
-
-
-
-/* Header with title */
 h1 {
   font-size: 1.75rem; /* 1.75 x 16px = 28 */
   color: rgb(255, 255, 255);
   margin-top: 1.875rem; /* 1.875 x 16px = 30px */
   background-color:  rgb(255, 51, 102);
   padding: 1rem; /* 1 x 16px = 16px */
-  border-radius: 1rem;
+  border-radius: .5rem;
+  font-variant-caps: small-caps;
+}
+
+h2 {
+  font-size: 1.25rem; /* 1.25 x 16px = 20px */
+  color: rgb(255, 51, 102);
+}
+
+/* h2:last-of-type {
+  margin: 0;
+} */
+
+p {
+  line-height: .75em; /* .75 x 16px = 12 */
+}
+
+p, li  {
+  color: rgb(0,102,153);
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  border: 4px solid rgb(255, 51, 102);
+  border-radius: .5rem;
 
 }
 
-
-h1:first-line {
-  font-variant-caps: small-caps;
+figure {
+  float: left;
+  margin: 0;
+  margin-right: 1rem;
+  margin-bottom: 1rem;
 }
 
 figcaption {
@@ -74,8 +69,40 @@ figcaption {
   font-size: .75rem;
 }
 
+ul:first-of-type::after {
+  font-size: .875rem; /* .875rem x 16px = 14px */
+  content: "*Remember to multiply each ingredient by number of servings";
+  color: rgb(255, 128, 128);
+}
+
+li {
+  line-height: 1.5em; /* 1.5 x 16px = 24px */
+}
+
+main {
+  background-color: rgba(204, 230, 255, 0.3);
+  padding: 2rem; /* 2 x 16px = 32 */
+  border-radius: .5rem;
+}
+
+section {
+  clear: both;
+  margin-bottom: 2rem;
+}
+
+section > h2 {
+  font-size: 1rem; /* 1 x 16px = 16px */
+  padding-top: 1rem; /* 1 x 16px = 16px */
+}
+
+section > p {
+  font-size: .75em; /* .75 x 16px = 12px */
+  color: rgb(0, 102, 153);
+}
+
 article > h2:first-child{
-  font-size: .75rem;
+  font-size: 1.25rem;
+  margin-top: 1rem;
 }
 
 article:first-of-type p {
@@ -83,64 +110,20 @@ article:first-of-type p {
   padding-top: .1rem; /* 1 x 16px = 16px */
 }
 
-
-/* Initial Information font size */
-section > h2 {
-  font-size: 1rem; /* 1 x 16px = 16px */
-  padding-top: 1rem; /* 1 x 16px = 16px */
+article > p:last-of-type{
+  margin-bottom: 2rem;
 }
 
-
-section > p {
-  font-size: .75em; /* .75 x 16px = 12px */
-  color: rgb(0, 102, 153);
-}
-
-
-h2 {
-  font-size: 1.25rem; /* 1.25 x 16px = 20px */
-  color: rgb(255, 51, 102);
-}
-
-
-/* Removes separation from Other Information and box */
-h2:last-of-type {
-  margin: 0;
-}
-
-
-/* Removes space between Yield and Ingredients */
-article > h2:first-child {
-  margin-top: 1rem;
-}
-
-
-/* Box around Other Information */
-article > h2:last-of-type {
+article:last-child > h2 {
   color: white;
   padding: 1rem; /* 1 x 16px = 16px */
   background-color: rgba(255, 51, 102,.2); /* box around Other Information heading */
-  border-radius: 1rem;
+  border-radius: .5rem;
+  margin-top: 2rem;
+  margin-bottom: .5rem;
 }
 
-
-/* This colde below took me an hour to figure out!!!
-how to just put the extra content on the last
-line of the first list aaarghh*/
-ul:first-of-type::after {
-  font-size: .875rem; /* .875rem x 16px = 14px */
-  content: "*Remember to multiply each ingredient by number of servings";
-  color: rgb(255, 128, 128);
-}
-
-
-li {
-  line-height: 1.5em; /* 1.5 x 16px = 24px */
-}
-
-
-/* Other Information */
-ul:last-of-type {
+article:last-child ul {
   background-color: rgba(255, 51, 102,.1);
   list-style-type: circle;
   margin: .25rem;
@@ -148,16 +131,5 @@ ul:last-of-type {
   padding-top: 1rem; /* 1 x 16px = 16px */
   padding-bottom: 1rem; /* 1 x 16px = 16px */
   padding-right: 1rem;
-  border-radius: 1rem;
-
-}
-
-
-a:link {
-  color: rgb(153, 0, 51);
-}
-
-
-a:visited {
-  color: rgb(0, 51, 153);
+  border-radius: .5rem;
 }

@@ -1,10 +1,9 @@
 @import url('https://fonts.googleapis.com/css?family=Muli:300,800&display=swap');
 
-s
+
 html {
   font-size: 16px;
 }
-
 
 body {
   font-family: "Muli",  sans-serif;
@@ -16,9 +15,7 @@ body {
   padding-left:  .625rem; /* .625 x 16px = 10px */
   display: run-in;
   border-radius: 1rem;
-
 }
-
 
 main {
   background-color: rgba(204, 230, 255, 0.3);
@@ -27,11 +24,9 @@ main {
   border-radius: 1rem; /* 1 x 16px = 16px */
 }
 
-
 p {
   line-height: .75em; /* .75 x 16px = 12px */
 }
-
 
 p, li  {
   color: rgb(0, 153, 204);
@@ -50,8 +45,6 @@ img {
   border: 4px solid rgb(51, 102, 153);
 }
 
-
-
 /* Header with title */
 h1 {
   font-size: 1.75rem; /* 1.75 x 16px = 28 */
@@ -63,7 +56,6 @@ h1 {
 
 }
 
-
 h1:first-line {
   font-variant-caps: small-caps;
 }
@@ -73,8 +65,6 @@ figcaption {
   font-size: .75rem;/* .75 x 16px = 12px */
   padding: .1875rem; /* .1875 x 16px = 3px */
   text-align: center;
-  }
-
 }
 
 article > h2:first-child{
@@ -97,7 +87,6 @@ section > h2 {
 section > p {
   font-size: .75em; /* .75 x 16px = 12px */
   color: rgb(0, 102, 153);
-
 }
 
 
@@ -112,11 +101,9 @@ h2:last-of-type {
   margin: 0;
 }
 
-
 /* Removes space between Yield and Ingredients */
 article > h2:first-child {
   margin-top: 1rem; /* 1 x 16px = 16px */
-
 }
 
 
@@ -138,12 +125,10 @@ ul:first-of-type::after {
   color: rgb(255, 128, 128);
 }
 
-
 li {
   font-size: .8rem;
   line-height: 1.5em; /* 1.5 x 16px = 24px */
 }
-
 
 /* Other Information */
 ul:last-of-type {
@@ -155,14 +140,11 @@ ul:last-of-type {
   padding-bottom: 1rem; /* 1 x 16px = 16px */
   padding-right: 1rem; /* 1 x 16px = 16px */
   border-radius: 1rem; /* 1 x 16px = 16px */
-
 }
-
 
 a:link {
   color: rgb(153, 0, 51);
 }
-
 
 a:visited {
   color: rgb(0, 51, 153);

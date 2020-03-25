@@ -1,0 +1,85 @@
+@media print {
+ /* css blocks */
+
+
+@page {
+  size: 5.5in 8.5in;
+  margin: 0.5in;
+}
+
+body {
+  font-size: 10pt;
+  margin: 2rem;
+  font-family: "Arial", sans-serif;
+  font-weight: 300;
+  max-width: 8.5in; /* 54 x 16px = 768px */
+  padding-left:  .625rem; /* .625 x 16px = 10px */
+}
+
+a {
+  color: #000;
+}
+
+a[href^=http]:after {
+  content: " (" attr(href) ") ";
+}
+
+section {
+  clear: both;
+  padding: .2rem;
+  border: .5pt dashed black;
+}
+
+section:first-of-type{
+  padding-bottom: 12rem;
+}
+
+p {
+  margin-left: 0;
+  display: flex;
+  flex-direction: row;
+}
+
+article {
+  padding: 1.25rem;
+  column-gap: .25em;
+}
+
+section:last-child {
+  margin-top: 0;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+section:last-child article:last-child {
+  grid-column: 1 / -1;
+}
+
+h1{
+  margin-top: 2.5rem;
+}
+
+h2 {
+  font-size: 1.1rem;
+  padding-top: 1rem;
+  margin-top: 0;
+}
+
+img {
+  filter: grayscale();
+  max-width: 80%;
+  height: auto;
+  border-radius: 8pt;
+}
+
+figure {
+  float: left;
+  margin: .5rem;
+  margin-bottom: 1rem;
+}
+
+figcaption {
+  font-size: 7pt;
+}
+
+}
