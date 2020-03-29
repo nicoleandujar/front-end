@@ -61,8 +61,7 @@ img {
 figure {
   float: left;
   margin: 0;
-  margin-right: 1rem;
-  margin-bottom: 1rem;
+  margin-right: 2rem;
 }
 
 figcaption {
@@ -88,8 +87,10 @@ main {
 
 section {
   clear: both;
-  margin-bottom: 2rem;
-  overflow:  visible;
+  overflow: auto;
+}
+section:first-child > h2 {
+  margin-top: 0;
 }
 
 section > h2 {
@@ -111,6 +112,10 @@ section > p {
 section:first-of-type h2,
 section:first-of-type p {
   display: block;
+}
+
+section:last-child article:last-child {
+  grid-column: 1 / -1;
 }
 
 article > h2:first-child{
