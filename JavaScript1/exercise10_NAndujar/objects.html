@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+	  <meta charset="UTF-8" />
+		<title>JavaScript Objects</title>
+		<link href="css/style.css" rel="stylesheet" />
+	</head>
+
+	<body>
+    <h1>JavaScript Objects</h1>
+
+    <script>
+      // include your code for questions 1-4 in this file
+
+      //Question 1
+      var flynn = {
+        species: "cat",
+        paws: 4,
+        colors: ["black", "brown", "gray", "white"],
+        shy: false,
+        cuddly: true,
+      }
+
+      //Question 2
+      flynn['favoriteCatnip']= "Bastet Mau";
+      flynn['favoriteToy']= "Mr. Fish";
+
+      //Question 3
+      flynn.pickyEater = false ;
+      flynn.born = 2011;
+
+      // Question 4
+      //What species is Flynn?
+      console.log("What species is Flynn?");
+      document.write("<strong>What species is Flynn? </strong>");
+      console.log(flynn.species);
+      document.write(flynn.species);
+
+      //Is Flynn shy?
+      console.log("Is Flynn shy?");
+      document.write("<p><strong> Is Flynn shy? </strong>");
+      console.log(flynn.shy);
+      document.write(flynn.shy);
+
+
+      //What is Flynn's favorite strain of cat nip?
+      console.log("What is Flynn\'s favorite strain of cat nip?");
+      document.write("<p><strong>What is Flynn\'s favorite strain of cat nip? </strong>")
+      console.log(flynn.favoriteCatnip);
+      document.write(flynn.favoriteCatnip);
+
+      //What colors are in Flynn's coat? (List each individually... or produce a comma-delimited string.)
+      console.log("What colors are in Flynn\'s coat?");
+      document.write("<p><strong> What colors are in Flynn\'s coat? </strong> ");
+      console.log(flynn.colors[0],",", flynn.colors[1], ",", flynn.colors[2],",", flynn.colors[3]);
+      document.write(flynn.colors[0],",", flynn.colors[1], ",", flynn.colors[2],",", flynn.colors[3]);
+
+
+      //What type of value is stored in the property paws?
+      console.log(typeof(flynn.paws));
+      document.write("<p><strong>What type of value is stored in the property paws? </strong>");
+      document.write(typeof(flynn.paws));
+
+      //What type of value is stored in the property colors?
+      document.write("<p><strong>What type of value is stored in the property colors? </strong>");
+      console.log(typeof(flynn.colors));
+      document.write(typeof(flynn.colors));
+
+      //What type of value is stored in the property cuddly?
+      document.write("<p><strong>What type of value is stored in the property cuddly? </strong>");
+      document.write(typeof(flynn.cuddly));
+      console.log(typeof(flynn.cuddly));
+
+      //Question 5
+      var pixarMovies = {
+
+        toyStory: {
+          movieTitle: "Toy Story",
+          releaseYear: 1995,
+          mainActors: ["Tom Hanks", "Tim Allen"],
+          rating: 100,
+          academyAward: false,
+          summary: "A cowboy doll is profoundly threatened and jealous when a new spaceman figure supplants him as top toy in a boy\'s room."
+        },
+
+        aBugsLife: {
+          movieTitle: "A Bug\'s Life",
+          releaseYear: 1998,
+          mainActors: ["Dave Foley", "Kevin Spacey", "Julia Louis-Dreyfus"],
+          rating: 92,
+          academyAward: false,
+          summary: "A misfit ant, looking for warriors to save his colony from greedy grasshoppers, recruits a group of bugs that turn out to be an inept circus troupe."
+        },
+
+        monstersInc: {
+          movieTitle: "Monster\'s Inc.",
+          mainActors: ["Billy Crystal", "John Goodman"],
+          rating: 96,
+          releaseYear: 2001,
+          academyAward: true,
+          summary: "In order to power the city, monsters have to scare children so that they scream. However, the children are toxic to the monsters, and after a child gets through, two monsters realize things may not be what they think." },
+
+
+      findingNemo: {
+        movieTitle: "Finding Nemo",
+        releaseYear: 2003,
+        mainActors: ["Albert Brooks", "Ellen DeGeneres"],
+        rating: 99,
+        academyAward: true,
+        summary: "After his son is captured in the Great Barrier Reef and taken to Sydney, a timid clownfish sets out on a journey to bring him home."
+      },
+
+      theIncredibles: {
+        movieTitle: "The Incredibles",
+        releaseYear: 2004,
+        mainActors: ["Craig T. Nelson", "Jason Lee", "Holly Hunter"],
+        rating: 97,
+        academyAward: true,
+        summary: "A family of undercover superheroes, while trying to live the quiet suburban life, are forced into action to save the world."
+      },
+
+      cars: {
+        movieTitle: "Cars",
+        releaseYear: 2006,
+        mainActors: ["Owen Wilson", "Paul Newman", "Bonnie Hunt", "Larry the Cable Guy"],
+        rating: 74,
+        academyAward: false,
+        summary: "A hot-shot race-car named Lightning McQueen gets waylaid in Radiator Springs, where he finds the true meaning of friendship and family."
+      }
+    }
+
+
+      // Question 7
+
+      // a
+      document.write("<p><strong> What is the Rotten Tomatoes rating for <em>Monsters, Inc.</em>?</strong></p>");
+      document.write(pixarMovies.monstersInc.rating);
+      // b
+      document.write("<p><strong>What is <em>Cars</em> about?</strong></p>");
+      document.write(pixarMovies.cars.summary);
+
+      // c
+      document.write("<p><strong>Who appeared in <em>The Incredibles</em>?</strong></p>");
+      document.write(pixarMovies.theIncredibles.mainActors);
+
+      // d
+      document.write("<p><strong>Who was the supporting actor in <em>A Bug's Life</em>?</strong></p>");
+      document.write(pixarMovies.aBugsLife.mainActors[1]);
+
+      // e
+      document.write("<p><strong>Which three movies won Oscars?</strong></p>");
+      document.write(pixarMovies.monstersInc.movieTitle + "</p>");  // movie 1
+      document.write(pixarMovies.findingNemo.movieTitle + "<p>");  // movie 2
+      document.write(pixarMovies.theIncredibles.movieTitle + "<p>");  // movie 3
+
+      // f
+      document.write("<p><strong>Which film has the most stars? How many?</strong></p>");
+      document.write(pixarMovies.cars.movieTitle +"<p>");  // film?
+      document.write(pixarMovies.cars.mainActors.length);  // how many?
+
+      // g
+      document.write("<p><strong>Which two movies have a Rotten Tomatoes rating over 98?</strong></p>");
+      document.write(pixarMovies.toyStory.movieTitle, ": ", pixarMovies.toyStory.rating + "<p>");  // film 1
+      document.write(pixarMovies.findingNemo.movieTitle, ": ", pixarMovies.findingNemo.rating + "<p>");  // film 2
+
+
+    </script>
+
+    <!-- include code for questions 5-7 in the file below -->
+    <script src="js/objects.js"></script>
+	</body>
+</html>
