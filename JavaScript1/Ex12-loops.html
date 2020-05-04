@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+	  <meta charset="UTF-8" />
+		<title>JavaScript Loops</title>
+		<link href="css/style.css" rel="stylesheet" />
+	</head>
+
+	<body>
+
+    <h1>JavaScript Loops</h1>
+
+    <script src="js/loops.js"></script>
+    <script>
+
+//Question 1
+
+
+    for (i = 0; i <= 50; i++) {
+      console.log(i);
+      document.write("<p>" + i + "<p>");
+    }
+
+
+//Question 2
+
+    for (n = 50; n >= 1; n--) {
+      console.log(n);
+      document.write("<p>" + n + "<p>");
+    }
+
+//Question 3
+//write a for loop that displays odd numbers from 1 - 50
+
+  for (var k = 1; k < 51; k = k + 2) { // counts up
+    console.log(k);
+    document.write("<p>" + k + "<p>");
+}
+
+
+//Question 4
+
+var b = 1;
+
+do {
+  console.log("Oh! Well, hello there!");
+  b++;
+} while (b < 1);
+
+//Question 5
+
+// var groceryList = prompt("Please enter a grocery list adding items separated by a comma.").split(",");
+//  document.write("Here is my grocery list: <p>");
+//  document.write("<ol");
+//
+//  var counter = 0; // our counter
+//
+//  while(counter < groceryList.length) {
+//    document.write("<li>" + groceryList[counter] + "</li>");
+//  	counter++;
+//  }
+//
+//  document.write("</ol>");
+
+
+//Question 6
+
+var groceryList = prompt("Please enter a grocery list adding items separated by a comma.").split(",");
+ console.log(groceryList);
+
+ document.write("Empty List");
+ var counter = 0;
+
+ if(groceryList[0] == "" && groceryList.length == 1) {
+   document.write("<p>Empty List</p>");
+ }  else {
+      document.write("<ul>");
+
+      while (counter < groceryList.length) {
+        if(groceryList[counter] != "") {
+          document.write("<li>" + groceryList[counter] + "</li>");
+        }
+        counter++;
+      }
+
+      document.write("</ul>");
+
+ }
+
+
+
+    </script>
+	</body>
+</html>

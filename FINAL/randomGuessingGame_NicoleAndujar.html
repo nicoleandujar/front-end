@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <title>Random Guessing Game by Nicole A.</title>
+  <link rel="stylesheet" media="screen" href="css/javaFinal.css" />
+</head>
+
+<body>
+  <header>
+    <h1>Random Number Guessing Game</h1>
+    <figure>
+      <img src="img/photo-of-person-typing-on-computer-keyboard-735911.jpg" alt="Soumil Kumar for Pexels">
+      <figcaption>Photo by <a href="https://www.pexels.com/@soumil-kumar-4325?utm_content=attributionCopyText&utm_medium=referral&utm_source=pexels">Soumil Kumar</a> from <a href="https://www.pexels.com/photo/photo-of-person-typing-on-computer-keyboard-735911/?utm_content=attributionCopyText&utm_medium=referral&utm_source=pexels">Pexels.</a></figcaption>
+    </figure>
+  </header>
+
+  <main>
+    <section>
+      <h2>Hello there!</h2>
+        <p>Are you ready to play?<p> Please pick a number between 1 and 100. You have <strong>unlimited </strong>tries!</p>
+
+      <form method="get" class="form">
+        <label for="guess">Type your Guess HERE: </label>
+        <input type="text" id="guess" value="" />
+        <input type="button" onclick="yourGuess()" value="Check my Guess" />
+        <br>
+        <br>
+        <fieldset>
+          <legend id="guesses" class="guesses">Your guesses </legend>
+          <textarea id="output" name="output" rows="10" style="width: 70%;"></textarea>
+        </fieldset>
+      </form>
+
+      <p>Press <strong>Command + R </strong> on Mac or <strong>F5</strong> on PC to start a new game.</p>
+
+    </section>
+
+    <script src="js/randomNA.js">
+
+    </script>
+
+  </main>
+</body>
+</html>

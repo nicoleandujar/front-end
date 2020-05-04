@@ -21,7 +21,7 @@ console.log(number);
 
 // Question 4
 
-var number = parseInt(Math.random() * 100);
+
  var emptynewArray = new Array(number);
 
 console.log(emptynewArray.length);
@@ -30,20 +30,20 @@ console.log(number);
 
 // Question 5
 
-// var splicedArray = emptynewArray.splice(27, 7);
-// console.log(number.length);
+var splicedArray = emptynewArray.splice(27, 7);
+ console.log(number.length);
 
 // could not continue this question so I commented it out
 
 // Question 6
 
-// var moreNumbers = [5, 7, 6, 8, 2, 1, 6, 8, 9, 0];
-// console.log(moreNumbers);
+ var moreNumbers = [5, 7, 6, 8, 2, 1, 6, 8, 9, 0];
+ console.log(moreNumbers);
 
 //Question 7
 
-// var newMoreNumbersArray = numbers.concat(moreNumbers);
-// console.log(newMoreNumbersArray);
+ var newMoreNumbersArray = numbers.concat(moreNumbers);
+ console.log(newMoreNumbersArray);
 
 
 // Question 8
@@ -59,7 +59,7 @@ document.write("<p>" + animals + "</p>");
 
 
 //Question 10
-// var topPets = ["fish", "cat", "dog", "elephant", "giraffe", "alligator", "bat"];
+var topPets = ["fish", "cat", "dog", "elephant", "giraffe", "alligator", "bat"];
 
 var topPets = [];
 

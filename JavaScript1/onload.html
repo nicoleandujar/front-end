@@ -1,0 +1,19 @@
+<html>
+
+<head>
+  <title>write example</title>
+
+  <script>
+    function newContent() {
+      document.open();
+      document.write("<meta name="author" />,");
+      document.close();
+    }
+  </script>
+</head>
+
+<body onload="newContent();">
+  <p>Some original document content.</p>
+</body>
+
+</html>

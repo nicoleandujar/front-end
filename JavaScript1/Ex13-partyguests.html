@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>JavaScript</title>
+    <link href="css/style.css" rel="stylesheet" />
+  </head>
+
+  <body>
+    <p>Open the Console.</p>
+    <p><strong>Chrome:</strong> View &raquo; Developer &raquo; JavaScript Console</p>
+    <p><strong>Firefox:</strong> Tools &raquo; Web Developer &raquo; Web Console</p>
+  <!-- <script src="js/ex-13-arithmetic.js"></script> -->
+<script>
+
+var guests = window.prompt("How many guests will there be at the party?");
+var pies = window.prompt("How many pies are there at the party?");
+
+var thisManyGuests = parseInt(guests);
+var thisManyPies = parseInt(pies);
+
+
+function printResponse(pieObject) {
+  string = "There are " + pieObject.people
+  string += " people and " + pieObject.pies + " pies. "
+  string += "Each pie has 6 slices. ";
+  string += "Each person gets " + pieObject.slicesPerPerson
+  string += " slices of pie. ";
+  string += "There are " + pieObject.leftoverPie
+  string += " slices of pie leftover.";
+
+  // The technique above is one way to build out a string. You'll see
+  // this frequently when creating a string on a web page. Keep things
+  // broken down into manageable chunks.
+
+  return string;
+}
+
+
+
+// var answer = console.log("There are " + thisManyGuests + " people with " + thisManyPies + " pies. Each person gets " + pieDiv + " pieces of pie. There are " + leftoverPie " leftover slices of pie.");
+
+
+function pieDiv() {
+  pieSlices = thisManyPies * 6;
+  // var piesForParty =  pieSlices / thisManyGuests;
+  // var leftoverPie = pieSlices % thisManyGuests;
+  return(pieDiv);
+  // return piesForParty;
+  // return leftoverPie;
+};
+
+console.log(pieDiv);
+// console.log(pieDiv, answer);
+
+
+
+
+
+
+// Functions
+// Question 4 - Pie Party
+
+// Uncomment the code as needed.
+
+var peopleAttending = prompt("How many people?");
+var piesToEat = prompt("How many pies? (Mmm. Pie.)");
+
+
+function pieParty(people, pies) {
+  var pieForAll = {};
+
+  pieForAll.pies = parseInt(pies);
+  pieForAll.people = parseInt(people);
+
+  pieForAll.pieSlices = pieForAll.pies * 6;
+  pieForAll.slicesPerPerson = parseInt(pieForAll.pieSlices / people);
+  pieForAll.leftoverPie = pieForAll.pieSlices % people;
+
+  return printResponse(pieForAll);
+}
+
+
+console.log("There are " + peopleAttending + " people with " + piesToEat + " pies.");
+console.log(" Each person gets " + pieForAll.slicesPerPerson + " pieces of pie. There are " + pieForAll.leftoverPie + " leftover slices of pie.");
+
+// console.log(pieParty(peopleAttending, piesToEat));
+
+
+
+
+</script>
+
+  </body>
+</html>
